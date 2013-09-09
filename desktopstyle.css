@@ -1,6 +1,6 @@
 body{
-	background: #050911;
-	color: #fff;
+	background: white;
+	color: #000;
 	overflow: hidden;
 }
 #topBar{
@@ -8,12 +8,12 @@ body{
 	position: absolute;
 	left: 25%;
 	width: 50%;
-	border-top:2px solid #fed85e; 
-	border-bottom: 2px solid #fed85e;
+	border-top:2px solid black; 
+	border-bottom: 2px solid black;
 }
 .uiStandard{
 	border-radius: 3px;
-    border: 2px solid #fed85e;
+    border: 2px solid black;
    	height: 75%;
    	width: 40%;
     top: 12.5%;
@@ -25,7 +25,7 @@ body{
 #cover{
     position: absolute;
     left: 25%;
-    background: #050911;
+    background: white;
     width: 50%;
     z-index: 9001;
 }
@@ -38,8 +38,8 @@ body{
 	position: absolute;
 	left: 25%;
 	width: 50%;
-	border-top:2px solid #fed85e; 
-	border-bottom: 2px solid #fed85e;
+	border-top:2px solid black; 
+	border-bottom: 2px solid black;
 }
 .textInit{
 	opacity: 0;
@@ -51,7 +51,7 @@ h1{
 	margin: 0px;
 }
 a{
-	color: #fff;
+	color: #000;
 }
 .info{
 	margin-left: 20px;
@@ -73,7 +73,7 @@ p{
 button{
 	background: transparent;
 	border:none;
-	color: white;
+	color: black;
 	display: inline;
 	padding: 0px;
 	text-align: center;
@@ -113,6 +113,6 @@ button{
 	bottom: 0px;
 	left: 0px;
 	right: 0px;
-    border-top: 2px solid #fed85e;
+    border-top: 2px solid black;
 	overflow-y:scroll;
 }
