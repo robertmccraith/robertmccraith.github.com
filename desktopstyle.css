@@ -2,6 +2,7 @@ body{
 	background: white;
 	color: #000;
 	overflow: hidden;
+	font-family: helvetica neue, Verdana Regular;
 }
 #topBar{
 	border-radius: 3px;
@@ -43,31 +44,23 @@ body{
 }
 .textInit{
 	opacity: 0;
-	margin-left: 20px;
 	margin-right: 20px;
 }
+
 h1{
 	text-indent: 10px;
 	margin: 0px;
 }
-a{
-	color: #000;
-}
-.info{
-	margin-left: 20px;
-}
+
 legend{
-	text-indent: 10px;
 	font-size: 15px;
 	font-weight: bold;
 }
-b{
-	margin-left: 20px;
-}
+
 p{
 	margin: 5px;
-	margin-left: 20px;
-	margin-right: 20px;
+
+	margin-right: 10px;
 	font-size:18px; 
 }
 button{
