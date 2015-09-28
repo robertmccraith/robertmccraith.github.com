@@ -50,7 +50,7 @@ function slidePanel(name){
 		panelName=name;
 		
 	}else{
-		var back = "#fed85e";
+		var back = "#000";
 		$(name).animate({borderTopColor:'#FFF',borderBottomColor:'#FFF',borderLeftColor:'#FFF',borderRightColor:'#FFF'},200, function(){$(name).animate({borderTopColor:back,borderBottomColor:back,borderLeftColor:back,borderRightColor:back}, 200)}) ;
 	}
 }

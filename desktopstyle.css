@@ -71,6 +71,9 @@ button{
 	padding: 0px;
 	text-align: center;
 }
+a{
+	color: black;
+}
 .buttons{
 	opacity: 0;
 	padding-top: .25em; 
