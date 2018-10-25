@@ -7,7 +7,7 @@ function slidePanel(name){
 	if (panelName != name) {
 
 		if (panelshown) {
-			
+
 			var num =Math.round(Math.random()*7+1);
 
 			switch(num){
@@ -35,8 +35,8 @@ function slidePanel(name){
 				default:
 					break;
 			}
-		
-			$(panelName).animate({right:'-=47%',opacity:1}, 750, function(){});	
+
+			$(panelName).animate({right:'-=47%',opacity:1}, 750, function(){});
 
 		}else{
 			$("#cover").animate({left:'-=23%'}, 750,function(){});
@@ -48,7 +48,7 @@ function slidePanel(name){
 		panelshown = true;
 		$(name).css('display', 'inline').css('width', '').css('height', '').css('border-width', '').css('font-size','');
 		panelName=name;
-		
+
 	}else{
 		var back = "#000";
 		$(name).animate({borderTopColor:'#FFF',borderBottomColor:'#FFF',borderLeftColor:'#FFF',borderRightColor:'#FFF'},200, function(){$(name).animate({borderTopColor:back,borderBottomColor:back,borderLeftColor:back,borderRightColor:back}, 200)}) ;
@@ -56,17 +56,16 @@ function slidePanel(name){
 }
 function init() {
 	//initial animations
-	$("#topBar").css('height', '0px').css('top', '45%').css('opacity', '0').animate({opacity:1}, 1000, "easeInBounce").animate({height:'1.5em', width:'50%', top:'6.5%',}, 1000);
-	$("#cover").css('height', '0px').css('top', '50%').css('opacity', '0').animate({opacity:1}, 1000, "easeInBounce").animate({height:'75%', width:'50%', top:'12.5%',}, 1000);
-	$("#bottomBar").css('height', '0px').css('bottom', '45%').css('opacity', '0').animate({opacity:1}, 1000, "easeInBounce").animate({height:'1.25em', width:'50.2%', bottom:'6.25%',}, 1000, showText(".textInit"));
-	var date = new Date();
-	document.getElementById("copyLeft").innerHTML="Copyright "+date.getFullYear();
+	$("#topBar").css('height', '0px').css('top', '45%').css('opacity', '0').animate({opacity:1}, 500, "easeInBounce").animate({height:'1.5em', width:'50%', top:'6.5%',}, 500);
+	$("#cover").css('height', '0px').css('top', '50%').css('opacity', '0').animate({opacity:1}, 500, "easeInBounce").animate({height:'75%', width:'50%', top:'12.5%',}, 500);
+	$("#bottomBar").css('height', '0px').css('bottom', '45%').css('opacity', '0').animate({opacity:1}, 500, "easeInBounce").animate({height:'1.25em', width:'50.2%', bottom:'6.25%',}, 500, showText(".textInit"));
+
 }
 
 function showText(text) {
 	//maths for the spacing
 	var parentwidth = $("#topBar").width();
-	
+
 	var a =((($("#ProgrammingButton").width()/2)/parentwidth)*100);
 
 	var one = 8-((($("#ProgrammingButton").width()/2)/parentwidth)*100);
@@ -88,6 +87,6 @@ function showText(text) {
 	$("#ExperienceButton").css('left', five+'%');
 	$("#RefereesButton").css('left', six+'%');
 	//animate in other elements
-	$("button.buttons").css('font-size', '70%').delay(3000).animate({opacity: '1'},1000);
-	$(text).delay(3000).animate({opacity:'1'}, 1000);
+	$("button.buttons").css('font-size', '70%').delay(1000).animate({opacity: '1'},500);
+	$(text).delay(1000).animate({opacity:'1'}, 500);
 }
