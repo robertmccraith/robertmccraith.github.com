@@ -12,8 +12,8 @@ title                    : "Robert McCraith"
 title_separator          : "-"
 name                     : &name "Robert McCraith"
 description              : &description "personal description"
-url                      : https://robertmccraith.github.io
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
+url                      : https://robertmccraith.com
+baseurl                  : / # the subpath of your site, e.g. "/blog"
 repository               : "robertmccraith/robertmccraith.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
